@@ -1,1 +1,1 @@
-# sagemaker-ciustom-model
+# sagemaker-custom-model
