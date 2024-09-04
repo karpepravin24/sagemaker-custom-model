@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# This is the file that implements the scoring service shell.
+
+set -e
+
+# Set up the environment variables that Flask uses
+export FLASK_APP=inference.py
+
+# Start the Flask app using gunicorn
+exec gunicorn --bind 0.0.0.0:8080 inference:app
